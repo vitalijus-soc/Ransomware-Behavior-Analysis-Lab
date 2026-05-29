@@ -203,14 +203,14 @@ Changed attributes: mtime
 
 | # | File | Stage |
 |---|---|---|
-| 1 | `WriteHost.png` | Ransomware simulator — encryption in progress |
-| 2 | `encrypted.png` | Result — 10 encrypted files in Explorer |
-| 3 | `Get-ChildItem.png` | Result — encrypted files list in PowerShell |
-| 4 | `README_RANSOM.png` | Ransom note in Notepad |
-| 5 | `Screenshot_2026-05-29_192122.png` | Ransom note content in PowerShell |
-| 6 | `Event1.png` | Sysmon EID 1 — PowerShell, IntegrityLevel High |
+| 1 | `ransomware-simulator-execution.png` | Ransomware simulator — encryption in progress |
+| 2 | `encrypted-files-explorer.png` | Result — 10 encrypted files in Explorer |
+| 3 | `encrypted-files-powershell.png` | Result — encrypted files list in PowerShell |
+| 4 | `ransom-note-notepad.png` | Ransom note in Notepad |
+| 5 | `ransom-note-powershell.png` | Ransom note content in PowerShell |
+| 6 | `sysmon-eid1-powershell.png` | Sysmon EID 1 — PowerShell, IntegrityLevel High |
 | 7 | `rule_550_T1565_001.png` | Wazuh — 12 alerts Rule 550 T1565.001 Impact |
-| 8 | `modified.png` | Wazuh — realtime ransom note detection |
+| 8 | `wazuh-fim-realtime-detection.png` | Wazuh — realtime ransom note detection |
 
 ---
 
@@ -232,14 +232,14 @@ Ransomware-Behavior-Analysis-Lab/
 ├── scripts/
 │   └── ransomware-simulator.ps1
 ├── screenshots/
-│   ├── WriteHost.png
-│   ├── encrypted.png
-│   ├── Get-ChildItem.png
-│   ├── README_RANSOM.png
-│   ├── Screenshot_2026-05-29_192122.png
-│   ├── Event1.png
+│   ├── ransomware-simulator-execution.png
+│   ├── encrypted-files-explorer.png
+│   ├── encrypted-files-powershell.png
+│   ├── ransom-note-notepad.png
+│   ├── ransom-note-powershell.png
+│   ├── sysmon-eid1-powershell.png
 │   ├── rule_550_T1565_001.png
-│   └── modified.png
+│   └── wazuh-fim-realtime-detection.png
 └── configs/
     └── ossec-fim-config.xml
 ```
