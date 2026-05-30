@@ -63,14 +63,16 @@ Get-Service Sysmon64
 # Status: Running
 ```
 
-### 3. Create Target Files
+### 3. Create Target Files (10 files total)
 
 ```powershell
+# Create the target directory
 New-Item -Path "C:\Users\vboxuser\Documents\RansomTest" -ItemType Directory -Force
 
-Set-Content "C:\Users\vboxuser\Documents\RansomTest\newdoc1.txt" "Sensitive financial data - Q1 2026"
-Set-Content "C:\Users\vboxuser\Documents\RansomTest\newdoc2.txt" "Employee records - confidential"
-Set-Content "C:\Users\vboxuser\Documents\RansomTest\newdoc3.txt" "Client database backup - restricted"
+# Generate 10 target files using a loop
+1..10 | ForEach-Object {
+    Set-Content "C:\Users\vboxuser\Documents\RansomTest\document$_.txt" "Confidential corporate data asset $_ - Restricted Access Only."
+}
 ```
 
 ---
